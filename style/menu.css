@@ -1,0 +1,92 @@
+#stage>#menuBar {
+    width: 100%;
+    height: 100%;
+}
+
+#stage>#menuBar>#menuHeader {
+    width: 100%;
+    height: 12%;
+    background: url(../img/globle/slideMenuHeader.png) 50% no-repeat;
+    background-size: 100% 105%;
+    position: relative;
+}
+
+#stage>#menuBar>#menuHeader>#shopButton {
+    width: 20%;
+    height: 80%;
+    background: url(../img/globle/shopButton.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 13px;
+    top: 7px;
+}
+
+#stage>#menuBar>#menuHeader>#settingButton {
+    width: 20%;
+    height: 80%;
+    background: url(../img/globle/settingButton.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 251px;
+    top: 6px;
+}
+
+#stage>#menuBar>#menuSlider {
+    /* border: 1px solid blue; */
+    width: 400%;
+    height: 73.5%;
+}
+
+#stage>#menuBar>#menuSlider>.items {
+    width: 25%;
+    height: 100%;
+    background: url(../img/globle/partOneSlide.png) 50% no-repeat;
+    background-size: 100% 101%;
+    float: left;
+}
+
+#stage>#menuBar>#menuSlider>.level1>.img {
+    width: 81%;
+    height: 46%;
+    background: url(../img/globle/partOneSlideImg.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 32px;
+}
+
+#stage>#menuBar>#menuSlider>.level2>.img {
+    width: 81%;
+    height: 46%;
+    background: url(../img/globle/partTweSlideImg.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 32px;
+    top: 1px;
+}
+
+#stage>#menuBar>#menuSlider>.level3>.img {
+    width: 81%;
+    height: 46%;
+    background: url(../img/globle/partThreeSlideImg.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 32px;
+    top: 1px;
+}
+
+#stage>#menuBar>#menuFooter {
+    width: 100%;
+    height: 14.5%;
+    background: url(../img/globle/footerWood.png) 50% no-repeat;
+    background-size: 100% 105%;
+}
+
+#stage>#menuBar>#menuFooter>#otherGamesButton {
+    width: 110px;
+    height: 110px;
+    background: url(../img/globle/otherGamesButtton.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 210px;
+    top: -15px;
+}
