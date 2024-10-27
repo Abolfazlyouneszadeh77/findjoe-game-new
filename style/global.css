@@ -1,0 +1,19 @@
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+
+#stage {
+    background: #ccc;
+    width: 330px;
+    height: 700px;
+}
+
+#hide {
+    display: none;
+}
+
+#show {
+    display: block;
+}
