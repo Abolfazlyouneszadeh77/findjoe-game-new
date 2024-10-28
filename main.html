@@ -4,7 +4,8 @@
 <head>
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/menu.css">
-    <link rel="stylesheet" href="style/levelOne.css">
+    <link rel="stylesheet" href="style/map.css">
+    <link rel="stylesheet" href="style/firstPlace.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <!-- stage -->
     <div id="stage">
         <!-- menu -->
-        <div id="menuBar" class="show">
+        <div id="menuBar" class="hide">
             <div id="menuHeader">
                 <div id="shopButton"></div>
                 <div id="settingButton"></div>
@@ -43,8 +44,35 @@
                 <div id="otherGamesButton"></div>
             </div>
         </div>
-        <!-- level-one -->
-
+        <!-- Map -->
+        <div id="map" class="hide">
+            <div id="mapHeader">
+                <div id="backBotton"></div>
+                <div id="star"></div>
+            </div>
+            <div id="mainMap"></div>
+            <div id="mapFooter"></div>
+        </div>
+        <!-- firstPlace -->
+        <div id="firstPlace" class="show">
+            <div id="officeHeader">
+                <div id="backButton"></div>
+                <div id="findHint"></div>
+                <div id="skipHint"></div>
+                <div id="settingButton"></div>
+            </div>
+            <div id="officeContent"></div>
+            <div id="officeFooter">
+                <div id="objectSlider">
+                    <div class="items star"></div>
+                    <div class="items trashCan"></div>
+                    <div class="items gun"></div>
+                    <div class="items dastband"></div>
+                    <div class="items weed"></div>
+                    <div class="items phone"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>

@@ -1,0 +1,82 @@
+#stage>#firstPlace {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#stage>#firstPlace>#officeHeader {
+    width: 100%;
+    height: 8%;
+    background: url(../img/globle/headerWood.png) 50% no-repeat;
+    background-size: 100% 105%;
+    position: relative;
+}
+
+#stage>#firstPlace>#officeHeader>#backButton {
+    width: 17%;
+    height: 75%;
+    background: url(../img/globle/backButton.png) 50% no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
+
+#stage>#firstPlace>#officeHeader>#settingButton {
+    width: 14%;
+    height: 80%;
+    background: url(../img/globle/settingButton.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 280px;
+    top: 4px;
+}
+
+#stage>#firstPlace>#officeHeader>#findHint {
+    width: 12%;
+    height: 85%;
+    background: url(../img/globle/findHintIcon.png) 50% no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 190px;
+    top: 3px;
+}
+
+#stage>#firstPlace>#officeHeader>#skipHint {
+    width: 10%;
+    height: 65%;
+    background: url(../img/globle/skipHintIcon.png) 50% no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 100px;
+    top: 8px;
+}
+
+#stage>#firstPlace>#officeContent {
+    width: 100%;
+    height: 78%;
+    background: url(../img/partOneLevelOne/partOneBackground.png) 50% no-repeat;
+    background-size: 100% 102%;
+}
+
+#stage>#firstPlace>#officeFooter {
+    width: 100%;
+    height: 14.5%;
+    background: url(../img/globle/footerWood.png) 50% no-repeat;
+    background-size: 100% 105%;
+}
+
+#stage>#firstPlace>#officeFooter>#objectSlider {
+    width: 200%;
+    height: 60%;
+    margin-left: 5px;
+}
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.items {
+    width: 9%;
+    height: 100%;
+    float: left;
+    margin-right: 35px;
+    background: url(../img/partOneLevelOne/taskPaper.png) no-repeat;
+    background-size: 100% 100%;
+}
