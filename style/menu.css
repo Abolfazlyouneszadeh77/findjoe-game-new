@@ -1,6 +1,8 @@
 #stage>#menuBar {
     width: 100%;
     height: 100%;
+    position: relative;
+    /* overflow: hidden; */
 }
 
 #stage>#menuBar>#menuHeader {
@@ -45,16 +47,17 @@
     float: left;
 }
 
-#stage>#menuBar>#menuSlider>.level1>.img {
+#stage>#menuBar>#menuSlider>.level1>#level1Img {
     width: 81%;
     height: 46%;
     background: url(../img/globle/partOneSlideImg.png) no-repeat;
     background-size: 100% 100%;
     position: relative;
     left: 32px;
+    cursor: pointer;
 }
 
-#stage>#menuBar>#menuSlider>.level2>.img {
+#stage>#menuBar>#menuSlider>.level2>#level2Img {
     width: 81%;
     height: 46%;
     background: url(../img/globle/partTweSlideImg.png) no-repeat;
@@ -64,7 +67,7 @@
     top: 1px;
 }
 
-#stage>#menuBar>#menuSlider>.level3>.img {
+#stage>#menuBar>#menuSlider>.level3>#level3Img {
     width: 81%;
     height: 46%;
     background: url(../img/globle/partThreeSlideImg.png) no-repeat;
@@ -89,4 +92,14 @@
     position: relative;
     left: 210px;
     top: -15px;
+}
+
+#stage>#menuBar>#setting {
+    width: 80%;
+    height: 70%;
+    background: url(../img/globle/settingMenu.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -492px;
+    left: 35px;
 }

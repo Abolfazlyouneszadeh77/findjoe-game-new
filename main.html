@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/map.css">
     <link rel="stylesheet" href="style/firstPlace.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
+
     <!-- audio  -->
-    <audio src="audio/auDoor.mp3" id="auDoor"></audio>
+    <!-- <audio src="audio/auDoor.mp3" id="auDoor"></audio>
     <audio src="audio/auDrawer.mp3" id="auDrawer"></audio>
     <audio src="audio/auFound.mp3" id="auFound"></audio>
     <audio src="audio/auHat.mp3" id="auHat"></audio>
@@ -20,29 +22,31 @@
     <audio src="audio/auPhone.mp3" id="auPhone"></audio>
     <audio src="audio/auPlayGeme.mp3" id="auPlayGeme"></audio>
     <audio src="audio/auSheet.mp3" id="auSheet"></audio>
-    <audio src="audio/auTakeLeaf.mp3" id="auTakeLeaf"></audio>
+    <audio src="audio/auTakeLeaf.mp3" id="auTakeLeaf"></audio> -->
     <!-- stage -->
     <div id="stage">
         <!-- menu -->
-        <div id="menuBar" class="hide">
+        <div id="menuBar" class="show">
             <div id="menuHeader">
                 <div id="shopButton"></div>
                 <div id="settingButton"></div>
             </div>
             <div id="menuSlider">
                 <div class="items level1">
-                    <div class="img"></div>
+                    <div id="level1Img"></div>
                 </div>
                 <div class="items level2">
-                    <div class="img"></div>
+                    <div id="level2Img"></div>
                 </div>
                 <div class="items level3">
-                    <div class="img"></div>
+                    <div id="level3Img"></div>
                 </div>
             </div>
             <div id="menuFooter">
                 <div id="otherGamesButton"></div>
             </div>
+            <div id="setting"></div>
+
         </div>
         <!-- Map -->
         <div id="map" class="hide">
@@ -54,7 +58,7 @@
             <div id="mapFooter"></div>
         </div>
         <!-- firstPlace -->
-        <div id="firstPlace" class="show">
+        <div id="firstPlace" class="hide">
             <div id="officeHeader">
                 <div id="backButton"></div>
                 <div id="findHint"></div>
@@ -75,6 +79,16 @@
         </div>
     </div>
 
+    <script>
+        level1Img.onclick = function() {
+            menuBar.className = "hide";
+            map.className = "show";
+        }
+        settingButton.onclick = function() {
+            alert("...");
+            setting.style.top = "0";
+        }
+    </script>
 </body>
 
 </html>
