@@ -105,3 +105,8 @@
     top: -492px;
     left: 35px;
 }
+
+#stage>#menuBar>#shopping {
+    width: 100%;
+    height: 100%;
+}
