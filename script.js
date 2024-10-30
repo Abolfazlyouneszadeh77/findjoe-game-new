@@ -4,5 +4,4 @@ level1Img.onclick = function () {
 }
 settingButton.onclick = function () {
     alert("...");
-    setting.style.top = "0";
 }
