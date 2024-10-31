@@ -38,6 +38,8 @@
     /* border: 1px solid blue; */
     width: 400%;
     height: 73.5%;
+    position: relative;
+    left: 0%;
 }
 
 #stage>#menuBar>#menuSlider>.items {
@@ -110,4 +112,22 @@
     position: absolute;
     top: 180px;
     left: 220px;
+}
+#stage>#menuBar>#leftButtom{
+    width: 50px;
+    height: 70px;
+    background: url("../img/left.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 300px;
+}
+#stage>#menuBar>#rightButtom{
+    width: 50px;
+    height: 70px;
+    background: url("../img/right.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 280px;
+    top: 300px;
 }
