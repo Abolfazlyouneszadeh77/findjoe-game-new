@@ -1,8 +1,36 @@
+// menu slider
+pos1=0
+rightButtom.onclick=()=>{
+     if(pos>-200){
+          pos = pos - 100;
+          menuSlider.style.left= pos + "%";
+          menuSlider.style.transition="1s";
+
+     }else if(pos==-200){
+          alert("over")
+     }
+}
+leftButtom.onclick=()=>{
+     if(pos<0){
+          pos = pos + 100;
+          menuSlider.style.left= pos + "%";
+          menuSlider.style.transition="1s";
+     }else if(pos==0){
+          alert("over")
+     }
+}
+
+
+
 level1Img.onclick = ()=> {
      menuBar.className = "hide";
      map.className = "show";
 }
 
+
+
+
+// game setting
 pos=0;
 function onsetting(){
      if(pos==0){
