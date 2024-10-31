@@ -12,7 +12,7 @@
         position: relative;
     }
     
-    #stage>#map>#mapHeader>#backBotton {
+    #stage>#map>#mapHeader>#backButtonMap{
         width: 17%;
         height: 75%;
         background: url(../img/globle/backButton.png) 50% no-repeat;
