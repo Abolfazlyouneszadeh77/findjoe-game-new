@@ -3,7 +3,7 @@
         height: 100%;
         overflow: hidden;
     }
-    
+
     #stage>#map>#mapHeader {
         width: 100%;
         height: 8%;
@@ -11,8 +11,8 @@
         background-size: 100% 105%;
         position: relative;
     }
-    
-    #stage>#map>#mapHeader>#backButtonMap{
+
+    #stage>#map>#mapHeader>#backButtonMap {
         width: 17%;
         height: 75%;
         background: url(../img/globle/backButton.png) 50% no-repeat;
@@ -21,7 +21,7 @@
         left: 5px;
         top: 4px;
     }
-    
+
     #stage>#map>#mapHeader>#star {
         width: 14%;
         height: 80%;
@@ -31,17 +31,82 @@
         left: 281px;
         top: 3px;
     }
-    
+
+
     #stage>#map>#mainMap {
-        width: 450%;
-        height: 78%;
-        background: url(../img/partOneSlide.png) 50% no-repeat;
+        height: 560px;
+
         background-size: 100% 102%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        position: relative;
+
+
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
     }
-    
+
+    #stage>#map>#mainMap::-webkit-scrollbar {
+        display: none;
+        /*for chrome , opera , safari*/
+    }
+
+    #stage>#map>#mainMap>img {
+        /* width: 100%; */
+        /* position: relative; */
+        height: 560px;
+        /* z-index: 0; */
+    }
+
+    #mainMap>.selectLevel {
+        position: absolute;
+        z-index: 1;
+        left: 125px;
+        top: 410px;
+        display: flex;
+
+        width: 55px;
+        height: 55px;
+        border: 2px dashed white;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+
+        cursor: pointer;
+
+        animation: selectOnMap 1.5s linear 0.5s infinite normal both;
+    }
+
+
     #stage>#map>#mapFooter {
         width: 100%;
         height: 14.5%;
         background: url(../img/globle/footerWood.png) 50% no-repeat;
         background-size: 100% 100%;
+    }
+
+    @keyframes selectOnMap {
+        0% {
+            transform: scale(0.75, 0.75);
+        }
+
+        25% {
+            transform: scale(1, 1);
+        }
+
+        50% {
+            transform: scale(1.25, 1.25);
+        }
+
+        75% {
+            transform: scale(1, 1);
+        }
+
+        100% {
+            transform: scale(0.75, 0.75);
+
+        }
     }

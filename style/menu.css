@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 #stage>#menuBar>#menuHeader {
@@ -97,23 +97,58 @@
     top: -15px;
 }
 
-#stage>#menuBar>#settingPage {
-    width: 80%;
-    height: 70%;
+#settingPage {
+    width: 264px;
+    height: 490px;
     background: url(../img/globle/settingMenu.png) no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: -492px;
-    left: 35px;
+    left: 240px;
+
+    z-index: 1;
 }
-#stage>#menuBar>#settingPage>#closePage {
-    width: 50px;
-    height: 50px;
+
+#settingPage>#closePage {
+    width: 30px;
+    height: 30px;
     position: absolute;
-    top: 180px;
-    left: 220px;
+    top: 190px;
+    left: 230px;
+    cursor: pointer;
 }
-#stage>#menuBar>#leftButtom{
+
+#settingPage>#sound {
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+
+    background: url(../img/settingImg/gameSoundsOff.png) no-repeat;
+    background-size: 53px 53px;
+
+    position: absolute;
+    top: 234px;
+    left: 43px;
+
+    cursor: pointer;
+}
+
+#settingPage>#music {
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+
+    background: url(../img/settingImg/gameMusicOff.png) no-repeat;
+    background-size: 53px 53px;
+
+    position: absolute;
+    top: 299px;
+    left: 43px;
+
+    cursor: pointer;
+}
+
+#stage>#menuBar>#leftButtom {
     width: 50px;
     height: 70px;
     background: url("../img/left.png") no-repeat;
@@ -122,7 +157,8 @@
     left: 0;
     top: 300px;
 }
-#stage>#menuBar>#rightButtom{
+
+#stage>#menuBar>#rightButtom {
     width: 50px;
     height: 70px;
     background: url("../img/right.png") no-repeat;
