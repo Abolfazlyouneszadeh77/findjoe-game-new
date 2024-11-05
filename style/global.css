@@ -8,6 +8,7 @@ body {
     background: #ccc;
     width: 330px;
     height: 700px;
+    position: relative;
 }
 
 .hide {
