@@ -20,23 +20,16 @@ leftButtom.onclick=()=>{
      }
 }
 
-level1Img.onclick = ()=> {
-     menuBar.className = "hide";
-     map.className = "show";
-}
-
 // game setting
 pos=0;
 function onsetting(){
      if(pos==0){
-          //    menuSlider.style.filter="blur(2px);";
              settingPage.style.top= "-5px";
              settingPage.style.transition="1s";
-             settingPage.style.backdropFilter="brightness(30%)";
+             settingPage.style.backdropFilter="brightness(25%)";
              pos=1;
         }else if(pos==1){
-          //    menuSlider.style.filter="blur(0px)";
-             settingPage.style.top= "-492px";
+             settingPage.style.top= "-700px";
              settingPage.style.transition="1s";
              pos=0;
             }
@@ -48,6 +41,11 @@ closePage.onclick=()=> {
      onsetting();
 }
 
+level1Img.onclick = ()=> {
+     menuBar.className = "hide";
+     map.className = "show";
+}
+
 shopButton.onclick =()=> {
     alert("shopping closed");
 }
@@ -55,4 +53,19 @@ shopButton.onclick =()=> {
 backButtonMap.onclick=()=>{
      map.className="hide";
      menuBar.className="show";
+}
+
+backButtonLand.onclick=()=>{
+     firstPlace.className="hide";
+     map.className="show";
+}
+
+sheriffShow.onclick=()=>{
+     alert("!!وچه ره دماسین!!");
+     sheriffShow.style.display="none";
+}
+
+selectLevel.onclick=()=>{
+     map.className="hide";
+     firstPlace.className="show";
 }
