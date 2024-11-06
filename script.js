@@ -61,11 +61,37 @@ backButtonLand.onclick=()=>{
 }
 
 sheriffShow.onclick=()=>{
-     alert("!!وچه ره دماسین!!");
+     // alert("!!وچه ره دماسین!!");
      sheriffShow.style.display="none";
 }
 
 selectLevel.onclick=()=>{
      map.className="hide";
      firstPlace.className="show";
+}
+
+weed.onclick=()=>{
+     alert("...");
+     weed.style.display="none";
+     weedTick.style.display="block";
+}
+
+star.onclick=()=>{
+     alert("...");
+     star.style.display="none";
+     starTick.style.display="block";
+}
+
+phone.onclick=()=>{
+     alert("....")
+     phone.style.display="none";
+     phoneTick.style.display="block";
+}
+drawerPic.onclick=()=>{
+     drawerPic.style.display="none";
+}
+gun.onclick=()=>{
+     alert("....")
+     gun.style.display="none";
+     gunTick.style.display="block";
 }

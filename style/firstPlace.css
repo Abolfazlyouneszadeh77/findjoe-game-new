@@ -112,21 +112,79 @@
     height: 100%;
     float: left;
     margin-right: 35px;
-    background: url(../img/partOneLevelOne//footerBoarder.png) no-repeat;
+    background: url(../img/partOneLevelOne/footerBoarder.png) no-repeat;
     background-size: 100% 100%;
 }
+#stage>#firstPlace>#officeFooter>#objectSlider>.phoneFoot>.phoneImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partOneLevelOne/Phone.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+#stage>#firstPlace>#officeFooter>#objectSlider>.phoneFoot>.phoneImg>#phoneTick{
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
 
-#stage>#firstPlace>#officeFooter>#objectSlider>.star>div {
+#stage>#firstPlace>#officeFooter>#objectSlider>.gunFoot>.gunImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partOneLevelOne/miniGun.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+#stage>#firstPlace>#officeFooter>#objectSlider>.gunFoot>.gunImg>#gunTick{
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.starFoot>.starImg {
     width: 100%;
     height: 100%;
     background: url(../img/partOneLevelOne/star.png) 30% 70% no-repeat;
     background-size: 60% 60%;
+    position: relative;
 }
-#stage>#firstPlace>#officeFooter>#objectSlider>.weed>div {
+#stage>#firstPlace>#officeFooter>#objectSlider>.starFoot>.starImg>#starTick{
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.weedFoot>.weedImg {
     width: 100%;
     height: 100%;
     background: url(../img/partOneLevelOne/greenFlower.png) 30% 70% no-repeat;
     background-size: 60% 60%;
+    position: relative;
+}
+#stage>#firstPlace>#officeFooter>#objectSlider>.weedFoot>.weedImg>#weedTick{
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
 }
 
 #stage>#firstPlace>#sheriffInOffice {
@@ -152,7 +210,7 @@
     top: 18px;
     left: 280px;
     background: url(../img/partOneLevelOne/star.png) no-repeat;
-    background-size: 15px 15px;
+    background-size: 100% 100%;
 }
 
 #officeContent>.officePhone {
@@ -184,7 +242,6 @@
     left: 260px;
     background: url(../img/partOneLevelOne/miniGun.png)no-repeat;
     background-size: contain;
-
 }
 
 #officeContent>.drawerPic {
