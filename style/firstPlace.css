@@ -1,8 +1,41 @@
 #stage>#firstPlace {
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
+}
+
+#stage>#firstPlace>#sheriffShow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00000083;
+    z-index: 155;
+}
+
+#stage>#firstPlace>#sheriffShow>#sheriffTalk {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background: url(/img/partOneLevelOne/sheriffMonolouge.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 280px;
+    direction: rtl;
+}
+#stage>#firstPlace>#sheriffShow>#sheriffTalk>p {
+    
+    font-size: 18px;
+    font-weight: 700;
+    font-family: roya;
+    
+    line-height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+@font-face {
+    font-family: roya;
+    src: url(../fonts/Roya.ttf);
 }
 
 #stage>#firstPlace>#officeHeader {
@@ -79,8 +112,21 @@
     height: 100%;
     float: left;
     margin-right: 35px;
-    background: url(../img/partOneLevelOne/taskPaper.png) no-repeat;
+    background: url(../img/partOneLevelOne//footerBoarder.png) no-repeat;
     background-size: 100% 100%;
+}
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.star>div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partOneLevelOne/star.png) 30% 70% no-repeat;
+    background-size: 60% 60%;
+}
+#stage>#firstPlace>#officeFooter>#objectSlider>.weed>div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partOneLevelOne/greenFlower.png) 30% 70% no-repeat;
+    background-size: 60% 60%;
 }
 
 #stage>#firstPlace>#sheriffInOffice {
@@ -90,8 +136,6 @@
     background: url("../img/");
     position: absolute;
     bottom: 0;
-
-
 }
 
 /* office content  */
