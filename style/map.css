@@ -22,7 +22,7 @@
         top: 4px;
     }
 
-    #stage>#map>#mapHeader>#star {
+    #stage>#map>#mapHeader>#starRate {
         width: 14%;
         height: 80%;
         background: url(../img/globle/rateStarButton.png) 50% no-repeat;
