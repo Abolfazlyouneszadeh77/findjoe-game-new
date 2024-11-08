@@ -142,6 +142,13 @@
     cursor: pointer;
 }
 
+#settingPage>.auther {
+    height: 30px;
+    position: absolute;
+    top: 370px;
+    left: 63px;
+}
+
 #stage>#menuBar>#leftButtom {
     width: 50px;
     height: 70px;

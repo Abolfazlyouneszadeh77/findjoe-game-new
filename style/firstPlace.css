@@ -22,17 +22,19 @@
     margin-top: 280px;
     direction: rtl;
 }
+
 #stage>#firstPlace>#sheriffShow>#sheriffTalk>p {
-    
+
     font-size: 18px;
     font-weight: 700;
     font-family: roya;
-    
+
     line-height: 30px;
     position: absolute;
     top: 10px;
     right: 40px;
 }
+
 @font-face {
     font-family: roya;
     src: url(../fonts/Roya.ttf);
@@ -102,19 +104,29 @@
 }
 
 #stage>#firstPlace>#officeFooter>#objectSlider {
-    width: 200%;
-    height: 60%;
+    width: 570px;
+    height: 65px;
     margin-left: 5px;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    position: fixed;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+    overflow: scroll;
 }
 
 #stage>#firstPlace>#officeFooter>#objectSlider>.items {
-    width: 9%;
-    height: 100%;
-    float: left;
+    width: 60px;
+    height: 60px;
+
     margin-right: 35px;
     background: url(../img/partOneLevelOne/footerBoarder.png) no-repeat;
     background-size: 100% 100%;
+    overflow: visible;
 }
+
 #stage>#firstPlace>#officeFooter>#objectSlider>.phoneFoot>.phoneImg {
     width: 100%;
     height: 100%;
@@ -122,7 +134,8 @@
     background-size: 60% 50%;
     position: relative;
 }
-#stage>#firstPlace>#officeFooter>#objectSlider>.phoneFoot>.phoneImg>#phoneTick{
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.phoneFoot>.phoneImg>#phoneTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -140,7 +153,8 @@
     background-size: 60% 50%;
     position: relative;
 }
-#stage>#firstPlace>#officeFooter>#objectSlider>.gunFoot>.gunImg>#gunTick{
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.gunFoot>.gunImg>#gunTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -158,7 +172,8 @@
     background-size: 60% 60%;
     position: relative;
 }
-#stage>#firstPlace>#officeFooter>#objectSlider>.starFoot>.starImg>#starTick{
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.starFoot>.starImg>#starTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -176,7 +191,47 @@
     background-size: 60% 60%;
     position: relative;
 }
-#stage>#firstPlace>#officeFooter>#objectSlider>.weedFoot>.weedImg>#weedTick{
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.trashCanFoot>.trashImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partOneLevelOne/fullTrash.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.trashCanFoot>.trashImg>#trashTick {
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.dastbandFoot>.dastbandImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partOneLevelOne/handcuffs.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.dastbandFoot>.dastbandImg>#dastbandTick {
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+
+#stage>#firstPlace>#officeFooter>#objectSlider>.weedFoot>.weedImg>#weedTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -223,8 +278,8 @@
 }
 
 #officeContent>.officeHandcuffs {
-    width: 40px;
-    height: 20px;
+    width: 28px;
+    height: 13px;
     transform: rotate(20deg);
     position: absolute;
     top: 212px;
@@ -265,6 +320,17 @@
     background-size: contain;
 }
 
+#officeContent>.officeTrashCan2 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 460px;
+    left: 236px;
+    background: url(../img/partOneLevelOne/fullTrash.png)no-repeat;
+    background-size: contain;
+}
+
+
 #officeContent>.officeWeed {
     width: 25px;
     height: 35px;
@@ -286,6 +352,18 @@
 
 }
 
+#officeContent>.officePaper2 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 230px;
+    left: 65px;
+    background: url(../img/partOneLevelOne/paperTrash.png)no-repeat;
+    background-size: contain;
+    cursor: grab;
+
+}
+
 #officeContent>.hatPic {
     cursor: grab;
     width: 55px;
@@ -296,4 +374,6 @@
     left: 275px;
     background: url(../img/partOneLevelOne/hat.png)no-repeat;
     background-size: contain;
+
+    transition: 1s;
 }
