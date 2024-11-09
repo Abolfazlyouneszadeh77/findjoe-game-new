@@ -179,3 +179,26 @@ trashCan.onclick = () => {
           trashTick.style.display = "block";
      }
 }
+footerPos = 0;
+leftButtonFooter.style.display= "none";
+rightButtonFooter.onclick=()=>{
+     if(pos > -70){
+          pos = pos - 70;
+          objectSlider.style.left = pos + "%";
+          objectSlider.style.transition = "1s";
+          rightButtonFooter.style.display= "none";
+          leftButtonFooter.style.display= "block";
+     } 
+     // else if(pos == -70){
+
+     // }
+}
+leftButtonFooter.onclick=()=>{
+     if(pos < 0){
+          pos = pos + 70;
+          objectSlider.style.left = pos + "%";
+          objectSlider.style.transition = "1s";
+          leftButtonFooter.style.display= "none";
+          rightButtonFooter.style.display= "block";
+     }
+}

@@ -101,30 +101,55 @@
     height: 14.5%;
     background: url(../img/globle/footerWood.png) 50% no-repeat;
     background-size: 100% 105%;
+    position: relative;
+}
+#stage>#firstPlace>#officeFooter>#leftButtonFooter{
+    width: 15%;
+    height: 30%;
+    /* border: 1px solid #ccc;
+    background: #cccccc67;
+    border-radius: 0 10px 0 0; */
+    position: absolute;
+    bottom: 5px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 1000;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage>#firstPlace>#officeFooter>#rightButtonFooter{
+    width: 15%;
+    height: 30%;
+    /* border: 1px solid #ccc;
+    background: #cccccc67;
+    border-radius: 10px 0 0 0; */
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 1000;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
 }
 
 #stage>#firstPlace>#officeFooter>#objectSlider {
-    width: 570px;
-    height: 65px;
-    margin-left: 5px;
-
-    display: flex;
-    flex-flow: row nowrap;
-
-    position: fixed;
-    /* overflow-x: scroll;
-    overflow-y: hidden; */
-    overflow: scroll;
+    width: 180%;
+    height: 80%;
+    position: absolute;
+    left: 0;
 }
 
 #stage>#firstPlace>#officeFooter>#objectSlider>.items {
     width: 60px;
     height: 60px;
-
     margin-right: 35px;
     background: url(../img/partOneLevelOne/footerBoarder.png) no-repeat;
     background-size: 100% 100%;
-    overflow: visible;
+    float: left;
 }
 
 #stage>#firstPlace>#officeFooter>#objectSlider>.phoneFoot>.phoneImg {
