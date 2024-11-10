@@ -20,6 +20,7 @@ leftButtom.onclick = () => {
      }
 }
 
+let positionLevel = 0;
 // game setting
 pos = 0;
 function onsetting() {
@@ -65,12 +66,25 @@ backButtonLand.onclick = () => {
 
 sheriffShow.onclick = () => {
      // alert("!!وچه ره دماسین!!");
-     sheriffShow.style.display = "none";
+     firstTalk.className = "hide";
+     secondTalk.className = "show";
+     if (secondTalk.className = "show") {
+          sheriffShow.onclick = () => {
+               sheriffShow.style.display = "none";
+          }
+     }
+
 }
 
 selectLevel.onclick = () => {
-     map.className = "hide";
-     firstPlace.className = "show";
+     if (positionLevel == 0) {
+          map.className = "hide";
+          firstPlace.className = "show";
+     } else if (positionLevel == 1) {
+          console.log(positionLevel);
+          map.className = "hide";
+          sec.className = "show";
+     }
 }
 
 weed.onclick = () => {
@@ -113,6 +127,7 @@ paper.ondblclick = () => {
 handcuffs.onclick = () => {
      handcuffs.style.display = "none";
      dastbandTick.style.display = "block";
+     auFound.play();
 }
 
 hatPic.ondblclick = () => {
@@ -146,7 +161,7 @@ function onPaper() {
           if (isDragging) {
                paper.style.left = (event.clientX - offsetX) + "px";
                paper.style.top = (event.clientY - offsetY) + "px";
-               console.log(paper.style.left, paper.style.top);
+               // console.log(paper.style.left, paper.style.top);
           }
      }
      document.onmouseup = function (event) {
@@ -177,28 +192,64 @@ trashCan.onclick = () => {
           // console.log("shod");
           trashCan.style.display = "none";
           trashTick.style.display = "block";
+          auFound.play();
      }
 }
 footerPos = 0;
-leftButtonFooter.style.display= "none";
-rightButtonFooter.onclick=()=>{
-     if(pos > -70){
+leftButtonFooter.style.display = "none";
+rightButtonFooter.onclick = () => {
+     if (pos > -70) {
           pos = pos - 70;
           objectSlider.style.left = pos + "%";
           objectSlider.style.transition = "1s";
-          rightButtonFooter.style.display= "none";
-          leftButtonFooter.style.display= "block";
-     } 
+          rightButtonFooter.style.display = "none";
+          leftButtonFooter.style.display = "block";
+     }
      // else if(pos == -70){
 
      // }
 }
-leftButtonFooter.onclick=()=>{
-     if(pos < 0){
+leftButtonFooter.onclick = () => {
+     if (pos < 0) {
           pos = pos + 70;
           objectSlider.style.left = pos + "%";
           objectSlider.style.transition = "1s";
-          leftButtonFooter.style.display= "none";
-          rightButtonFooter.style.display= "block";
+          leftButtonFooter.style.display = "none";
+          rightButtonFooter.style.display = "block";
      }
 }
+
+const tickElements = [
+     document.getElementById('phoneTick'),
+     document.getElementById('weedTick'),
+     document.getElementById('gunTick'),
+     document.getElementById('starTick'),
+     document.getElementById('trashTick'),
+     document.getElementById('dastbandTick')
+];
+
+function checkAllTicks() {
+     const allVisible = tickElements.every(elem => getComputedStyle(elem).display === 'block');
+
+     if (allVisible) {
+          secondTalk.className = "hide";
+          thirdTalk.className = "show";
+          sheriffShow.style.display = "block";
+          positionLevel++;
+          if (sheriffShow.style.display = "block") {
+               sheriffShow.onclick = () => {
+                    firstPlace.className = "hide";
+                    map.className = "show";
+                    // getElementsByClassName("selectLevel").
+                    selectLevel.style.left = "115px";
+                    selectLevel.style.top = "290px";
+               }
+          }
+          console.log(positionLevel);
+     }
+}
+
+tickElements.forEach(elem => {
+     const observer = new MutationObserver(checkAllTicks);
+     observer.observe(elem, { attributes: true, attributeFilter: ['style'] });
+});

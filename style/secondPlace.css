@@ -1,0 +1,22 @@
+/* #stage>#secondPlace {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+} */
+#stage>#firstPlace {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#stage>#sec {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid red;
+    background: red;
+}
