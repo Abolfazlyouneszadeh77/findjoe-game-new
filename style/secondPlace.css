@@ -11,7 +11,6 @@
     overflow: hidden;
     position: relative;
 }
-
 #stage>#sec {
     width: 100%;
     height: 100%;
@@ -19,4 +18,300 @@
     position: relative;
     border: 1px solid red;
     background: red;
+}
+
+#stage>#firstPlace>#gardenContent {
+    width: 100%;
+    height: 78%;
+    background: url(../img/partTwo/background.png) 50% no-repeat;
+    background-size: 100% 105%;
+    position: relative;
+}
+#stage>#firstPlace>#gardenFooter {
+    width: 100%;
+    height: 14.5%;
+    background: url(../img/globle/footerWood.png) 50% no-repeat;
+    background-size: 100% 105%;
+    position: relative;
+}
+
+
+#stage>#firstPlace>#gardenFooter>#leftButtonFooter {
+    width: 15%;
+    height: 30%;
+    /* border: 1px solid #ccc;
+    background: #cccccc67;
+    border-radius: 0 10px 0 0; */
+    position: absolute;
+    bottom: 5px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 1000;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+#stage>#firstPlace>#gardenFooter>#rightButtonFooter {
+    width: 15%;
+    height: 30%;
+    /* border: 1px solid #ccc;
+    background: #cccccc67;
+    border-radius: 10px 0 0 0; */
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 1000;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage>#firstPlace>#gardenFooter>#objectSlider {
+    width: 180%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+}
+#stage>#firstPlace>#gardenFooter>#objectSlider>.items {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: url(../img/partOneLevelOne/footerBoarder.png) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+
+#stage>#firstPlace>#gardenFooter>#objectSlider>.carWheelFoot>.carWheelImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partTwo/carWheel.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+#stage>#firstPlace>#gardenFooter>#objectSlider>.carWheelFoot>.carWheelImg>#carWheelTick {
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+#stage>#firstPlace>#gardenFooter>#objectSlider>.boneFoot>.boneImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partTwo/bone.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+
+#stage>#firstPlace>#gardenFooter>#objectSlider>.boneFoot>.boneImg>#boneTick {
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+#stage>#firstPlace>#gardenFooter>#objectSlider>.postPocketFoot>.postPocketImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partTwo/postPocket.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+
+#stage>#firstPlace>#gardenFooter>#objectSlider>.postPocketFoot>.postPocketImg>#postPocketTick {
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+#stage>#firstPlace>#gardenFooter>#objectSlider>.dollFaceFoot>.dollFaceImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partTwo/dollFace.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+#stage>#firstPlace>#gardenFooter>#objectSlider>.dollFaceFoot>.dollFaceImg>#dollFaceTick {
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+
+
+#stage>#firstPlace>#gardenFooter>#objectSlider>.eggsFoot>.eggsImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partTwo/eggs.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+#stage>#firstPlace>#gardenFooter>#objectSlider>.eggsFoot>.eggsImg>#eggsTick {
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+
+#stage>#firstPlace>#gardenFooter>#objectSlider>.squireFoot>.squireImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partTwo/Squirel.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+#stage>#firstPlace>#gardenFooter>#objectSlider>.squirelFoot>.squirelImg>#squirelTick {
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+
+#stage>#firstPlace>#gardenFooter>#objectSlider>.shoesFoot>.shoesImg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/partTwo/shoes.png) 30% 70% no-repeat;
+    background-size: 60% 50%;
+    position: relative;
+}
+#stage>#firstPlace>#gardenFooter>#objectSlider>.shoeslFoot>.shoeslImg>#shoeslTick {
+    width: 40px;
+    height: 30px;
+    background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    display: none;
+}
+
+/*  garden content  */
+
+#gardenContent>.cases {
+    cursor: pointer;
+    background-color: red
+}
+
+#gardenContent>.gardenCarWheel {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 317px;
+    left: 220px;
+    background: url(../img/partTwo/carWheel.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gardenContent>.gardeneBone {
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    top: 472px;
+    left: 210px;
+    background: url(../img/partTwo/bone.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gardenContent>.gardenPostPocket {
+    width: 110px;
+    height: 70px;
+    position: absolute;
+    top: 478px;
+    left: 62px;
+    background: url(../img/partTwo/fullPostBox.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gardenContent>.gardenDollFace {
+    width: 19px;
+    height: 20px;
+    position: absolute;
+    top: 353px;
+    left: 188px;
+    background: url(../img/partTwo/dollFace.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gardenContent>.gardenEggs {
+    width: 9px;
+    height: 13px;
+    position: absolute;
+    top: 460px;
+    left: 55px;
+    background: url(../img/partTwo/eggs.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gardenContent>.gardenSquirel {
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    top: 70px;
+    left: 265px;
+    background: url(../img/partTwo/Squirel.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gardenContent>.partOfTreeTopOfSquirel {
+    width: 90px;
+    height: 80px;
+    position: absolute;
+    top: 60px;
+    left: 215px;
+    background: url(../img/partTwo/partOfTreeTopOfSquirel.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gardenContent>.gardenShoes {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 280px;
+    left: 24px;
+    background: url(../img/partTwo/shoes.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gardenContent>.closeDoor {
+    width: 39px;
+    height: 95px;
+    position: absolute;
+    top: 239px;
+    left: 13px;
+    background: url(../img/partTwo/closeDoor.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gardenContent>.hatPartTwe {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 260px;
+    left: 115px;
+    background: url(../img/partTwo/hatPartTwe.png) no-repeat;
+    background-size: 100% 100%;
 }
