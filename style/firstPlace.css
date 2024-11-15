@@ -1,9 +1,9 @@
-/* #stage>#firstPlace {
+#stage>#firstPlace {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
-} */
+}
 
 #stage>#firstPlace>#sheriffShow {
     width: 100%;
@@ -91,7 +91,7 @@
 #stage>#firstPlace>#officeContent {
     width: 100%;
     height: 78%;
-    /* background: url(../img/partOneLevelOne/partOneBackground.png) 50% no-repeat; */
+    background: url(../img/partOneLevelOne/partOneBackground.png) 50% no-repeat;
     
     background-size: 100% 102%;
     position: relative;
