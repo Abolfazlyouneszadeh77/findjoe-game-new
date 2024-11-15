@@ -63,6 +63,10 @@ backButtonLand.onclick = () => {
      firstPlace.className = "hide";
      map.className = "show";
 }
+backButtonLand2.onclick = () => {
+     secondPlace.className = "hide";
+     map.className = "show";
+}
 
 sheriffShow.onclick = () => {
      // alert("!!وچه ره دماسین!!");
@@ -76,6 +80,18 @@ sheriffShow.onclick = () => {
 
 }
 
+sheriffShow2.onclick = () => {
+     // alert("!!وچه ره دماسین!!");
+     firstTalk2.className = "hide";
+     secondTalk2.className = "show";
+     if (secondTalk2.className = "show") {
+          sheriffShow2.onclick = () => {
+               sheriffShow2.style.display = "none";
+          }
+     }
+
+}
+
 selectLevel.onclick = () => {
      if (positionLevel == 0) {
           map.className = "hide";
@@ -83,7 +99,11 @@ selectLevel.onclick = () => {
      } else if (positionLevel == 1) {
           console.log(positionLevel);
           map.className = "hide";
-          sec.className = "show";
+          secondPlace.className = "show";
+     } else if (positionLevel == 2) {
+          console.log(positionLevel);
+          console.log("خوبی عزیز مرحله ۳ رو نساختیم!");
+          alert("خوبی عزیز مرحله ۳ رو نساختیم!");
      }
 }
 
@@ -228,6 +248,7 @@ const tickElements = [
      document.getElementById('dastbandTick')
 ];
 
+
 function checkAllTicks() {
      const allVisible = tickElements.every(elem => getComputedStyle(elem).display === 'block');
 
@@ -253,3 +274,122 @@ tickElements.forEach(elem => {
      const observer = new MutationObserver(checkAllTicks);
      observer.observe(elem, { attributes: true, attributeFilter: ['style'] });
 });
+
+
+
+// level twe
+
+carWheel.onclick = () => {
+     auFound.play();
+     carWheel.style.display = "none";
+     carWheelTick.style.display = "block";
+}
+
+bone.onclick = () => {
+     auFound.play();
+     bone.style.display = "none";
+     boneTick.style.display = "block";
+}
+
+dollFace.onclick = () => {
+     auFound.play();
+     dollFace.style.display = "none";
+     dollFaceTick.style.display = "block";
+}
+
+eggs.onclick = () => {
+     auFound.play();
+     eggs.style.display = "none";
+     eggsTick.style.display = "block";
+}
+
+squirel.onclick = () => {
+     auFound.play();
+     squirel.style.display = "none";
+     squirelTick.style.display = "block";
+}
+
+shoes.onclick = () => {
+     auFound.play();
+     shoes.style.display = "none";
+     shoesTick.style.display = "block";
+}
+
+postPocket.onclick = () => {
+     auFound.play();
+     postPocket.style.display = "none";
+     postPocketTick.style.display = "block";
+}
+
+closeDoor.onclick = () => {
+     closeDoor.style.display = "none";
+}
+
+partOfTreeTopOfSquirel.onclick = () => {
+     partOfTreeTopOfSquirel.style.transform = "rotate(40deg)";
+     partOfTreeTopOfSquirel.style.top = "-24px";
+     partOfTreeTopOfSquirel.style.left = "243px";
+
+
+}
+
+const tickElements2 = [
+     document.getElementById('carWheelTick'),
+     document.getElementById('boneTick'),
+     document.getElementById('postPocketTick'),
+     document.getElementById('dollFaceTick'),
+     document.getElementById('eggsTick'),
+     document.getElementById('squirelTick'),
+     document.getElementById('shoesTick')
+];
+
+function checkAllTicks2() {
+     const allVisible = tickElements2.every(elem => getComputedStyle(elem).display === 'block');
+
+     if (allVisible) {
+          secondTalk2.className = "hide";
+          thirdTalk2.className = "show";
+          sheriffShow2.style.display = "block";
+          positionLevel++;
+          if (sheriffShow2.style.display = "block") {
+               sheriffShow2.onclick = () => {
+                    secondPlace.className = "hide";
+                    map.className = "show";
+                    // getElementsByClassName("selectLevel").
+                    selectLevel.style.left = "118px";
+                    selectLevel.style.top = "160px";
+               }
+          }
+          console.log(positionLevel);
+     }
+}
+
+tickElements2.forEach(elem => {
+     const observer = new MutationObserver(checkAllTicks2);
+     observer.observe(elem, { attributes: true, attributeFilter: ['style'] });
+});
+
+footerPos2 = 0;
+leftButtonFooter2.style.display = "none";
+rightButtonFooter2.onclick = () => {
+     console.log("object");
+     if (pos > -70) {
+          pos = pos - 70;
+          objectSlider2.style.left = pos + "%";
+          objectSlider2.style.transition = "1s";
+          rightButtonFooter2.style.display = "none";
+          leftButtonFooter2.style.display = "block";
+     }
+     // else if(pos == -70){
+
+     // }
+}
+leftButtonFooter2.onclick = () => {
+     if (pos < 0) {
+          pos = pos + 70;
+          objectSlider2.style.left = pos + "%";
+          objectSlider2.style.transition = "1s";
+          leftButtonFooter2.style.display = "none";
+          rightButtonFooter2.style.display = "block";
+     }
+}

@@ -5,12 +5,93 @@
     position: relative;
 
 } */
+
+
+#stage>#secondPlace>#sheriffShow2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00000083;
+    z-index: 155;
+}
+
+#stage>#secondPlace>#sheriffShow2>#sheriffTalk2 {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background: url(/img/partOneLevelOne/sheriffMonolouge.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 280px;
+    direction: rtl;
+}
+
+#stage>#secondPlace>#sheriffShow2>#sheriffTalk2>p {
+
+    font-size: 18px;
+    font-weight: 700;
+    font-family: roya;
+
+    line-height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
 #stage>#secondPlace {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
 }
+
+#stage>#secondPlace>#officeHeader {
+    width: 100%;
+    height: 8%;
+    background: url(../img/globle/headerWood.png) 50% no-repeat;
+    background-size: 100% 105%;
+    position: relative;
+}
+
+#stage>#secondPlace>#officeHeader>#backButtonLand2 {
+    width: 17%;
+    height: 75%;
+    background: url(../img/globle/backButton.png) 50% no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
+
+#stage>#secondPlace>#officeHeader>#settingButton {
+    width: 14%;
+    height: 80%;
+    background: url(../img/globle/settingButton.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 280px;
+    top: 4px;
+}
+
+#stage>#secondPlace>#officeHeader>#findHint {
+    width: 12%;
+    height: 85%;
+    background: url(../img/globle/findHintIcon.png) 50% no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 190px;
+    top: 3px;
+}
+
+#stage>#secondPlace>#officeHeader>#skipHint {
+    width: 10%;
+    height: 65%;
+    background: url(../img/globle/skipHintIcon.png) 50% no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 100px;
+    top: 8px;
+}
+
 
 #stage>#secondPlace>#gardenContent {
     width: 100%;
@@ -19,7 +100,8 @@
     background-size: 100% 105%;
     position: relative;
 }
-#stage>#secondPlace>#gardenFooter {
+
+#stage>#secondPlace>#gardenFooter2 {
     width: 100%;
     height: 14.5%;
     background: url(../img/globle/footerWood.png) 50% no-repeat;
@@ -28,7 +110,7 @@
 }
 
 
-#stage>#secondPlace>#gardenFooter>#leftButtonFooter {
+#stage>#secondPlace>#gardenFooter2>#leftButtonFooter2 {
     width: 15%;
     height: 30%;
     /* border: 1px solid #ccc;
@@ -43,7 +125,8 @@
     text-align: center;
     cursor: pointer;
 }
-#stage>#secondPlace>#gardenFooter>#rightButtonFooter {
+
+#stage>#secondPlace>#gardenFooter2>#rightButtonFooter2 {
     width: 15%;
     height: 30%;
     /* border: 1px solid #ccc;
@@ -60,13 +143,14 @@
     cursor: pointer;
 }
 
-#stage>#secondPlace>#gardenFooter>#objectSlider {
+#stage>#secondPlace>#gardenFooter2>#objectSlider2 {
     width: 180%;
     height: 80%;
     position: absolute;
     left: 0;
 }
-#stage>#secondPlace>#gardenFooter>#objectSlider>.items {
+
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.items {
     width: 60px;
     height: 60px;
     margin-right: 20px;
@@ -75,14 +159,15 @@
     float: left;
 }
 
-#stage>#secondPlace>#gardenFooter>#objectSlider>.carWheelFoot>.carWheelImg {
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.carWheelFoot>.carWheelImg {
     width: 100%;
     height: 100%;
     background: url(../img/partTwo/carWheel.png) 30% 70% no-repeat;
     background-size: 60% 50%;
     position: relative;
 }
-#stage>#secondPlace>#gardenFooter>#objectSlider>.carWheelFoot>.carWheelImg>#carWheelTick {
+
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.carWheelFoot>.carWheelImg>#carWheelTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -92,7 +177,8 @@
     left: 20px;
     display: none;
 }
-#stage>#secondPlace>#gardenFooter>#objectSlider>.boneFoot>.boneImg {
+
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.boneFoot>.boneImg {
     width: 100%;
     height: 100%;
     background: url(../img/partTwo/bone.png) 30% 70% no-repeat;
@@ -100,7 +186,7 @@
     position: relative;
 }
 
-#stage>#secondPlace>#gardenFooter>#objectSlider>.boneFoot>.boneImg>#boneTick {
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.boneFoot>.boneImg>#boneTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -110,7 +196,8 @@
     left: 20px;
     display: none;
 }
-#stage>#secondPlace>#gardenFooter>#objectSlider>.postPocketFoot>.postPocketImg {
+
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.postPocketFoot>.postPocketImg {
     width: 100%;
     height: 100%;
     background: url(../img/partTwo/postPocket.png) 30% 70% no-repeat;
@@ -118,7 +205,7 @@
     position: relative;
 }
 
-#stage>#secondPlace>#gardenFooter>#objectSlider>.postPocketFoot>.postPocketImg>#postPocketTick {
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.postPocketFoot>.postPocketImg>#postPocketTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -128,14 +215,16 @@
     left: 20px;
     display: none;
 }
-#stage>#secondPlace>#gardenFooter>#objectSlider>.dollFaceFoot>.dollFaceImg {
+
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.dollFaceFoot>.dollFaceImg {
     width: 100%;
     height: 100%;
     background: url(../img/partTwo/dollFace.png) 30% 70% no-repeat;
     background-size: 60% 50%;
     position: relative;
 }
-#stage>#secondPlace>#gardenFooter>#objectSlider>.dollFaceFoot>.dollFaceImg>#dollFaceTick {
+
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.dollFaceFoot>.dollFaceImg>#dollFaceTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -147,14 +236,15 @@
 }
 
 
-#stage>#secondPlace>#gardenFooter>#objectSlider>.eggsFoot>.eggsImg {
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.eggsFoot>.eggsImg {
     width: 100%;
     height: 100%;
     background: url(../img/partTwo/eggs.png) 30% 70% no-repeat;
     background-size: 60% 50%;
     position: relative;
 }
-#stage>#secondPlace>#gardenFooter>#objectSlider>.eggsFoot>.eggsImg>#eggsTick {
+
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.eggsFoot>.eggsImg>#eggsTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -165,14 +255,15 @@
     display: none;
 }
 
-#stage>#secondPlace>#gardenFooter>#objectSlider>.squireFoot>.squireImg {
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.squireFoot>.squireImg {
     width: 100%;
     height: 100%;
     background: url(../img/partTwo/Squirel.png) 30% 70% no-repeat;
     background-size: 60% 50%;
     position: relative;
 }
-#stage>#secondPlace>#gardenFooter>#objectSlider>.squirelFoot>.squirelImg>#squirelTick {
+
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.squirelFoot>.squirelImg>#squirelTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -183,14 +274,15 @@
     display: none;
 }
 
-#stage>#secondPlace>#gardenFooter>#objectSlider>.shoesFoot>.shoesImg {
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.shoesFoot>.shoesImg {
     width: 100%;
     height: 100%;
     background: url(../img/partTwo/shoes.png) 30% 70% no-repeat;
     background-size: 60% 50%;
     position: relative;
 }
-#stage>#secondPlace>#gardenFooter>#objectSlider>.shoeslFoot>.shoeslImg>#shoeslTick {
+
+#stage>#secondPlace>#gardenFooter2>#objectSlider2>.shoeslFoot>.shoeslImg>#shoeslTick {
     width: 40px;
     height: 30px;
     background: url(../img/partOneLevelOne/greenTick.png) no-repeat;
@@ -272,6 +364,7 @@
     width: 90px;
     height: 80px;
     position: absolute;
+    transition: 1.3s;
     top: 60px;
     left: 215px;
     background: url(../img/partTwo/partOfTreeTopOfSquirel.png) no-repeat;
